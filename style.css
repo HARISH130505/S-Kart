@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100vh;
+    width:100vw;
+}
+.header{
+
+   color:white;
+   background-color: black;
+   display:flex;
+   justify-content:space-between;
+}
+.name{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding:10px;
+    margin-left:5px;
+}
+.bas{
+    color:white;
+    padding:25px;
+    margin-right:10px;
+}
+.fa-user{
+    font-size: 35px;
+}
+.fa-cart-shopping{
+     font-size: 35px;
+     padding-left: 15px;
+}
+.search{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    border-top:none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.fa-magnifying-glass{
+    font-size: 25px;
+    padding:20px;
+}
+input{
+    padding:20px;
+    font-size: 25px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border:none;
+    width:90%;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1000px) {
+    .st{
+        flex-basis: 20%;
+    }
+}
+@media screen and (max-width:600px) {
+    .st{
+        flex-basis: 15%;
+    }
+}
+@media screen and (max-width:300px) {
+    .st{
+        flex-basis: 10%;
+    }
+}
+img{
+    object-fit: contain;
+    width:200px;
+    height:250px;
+}
+.st{
+    width:300px;
+    border-style: solid;
+    border-radius: 20px;
+    padding:20px;
+    margin-top:50px;
+    flex-basis: 20%;
+}
+
+hr{
+    width:100%;
+    border-style: solid;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+.fa-indian-rupee-sign{
+    font-size: medium;
+}
+button{
+    background-color: yellow;
+    border-radius: 10px;
+    border-style: none;
+    padding:10px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button:hover{
+    opacity:0.6;
+}
+.end{
+    background-color: black;
+    color:white;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display:flex;
+    justify-content: space-evenly;
+    margin:20px;
+    padding:20px;
+
+}
+.one{
+    padding:10px;
+}
+.two{
+    padding:10px;
+}
+.three{
+    padding:10px;
+}
+
+h3{
+    padding-bottom:10px;
+}
+.kart{
+    width:100%;
+    height:100%;
+    display: none;
+}
+.same{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding:10px;
+    margin-left: 15px;
+}
+.c1{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    width:300px;
+    border-style: solid;
+    border-radius: 20px;
+    padding:20px;
+    margin:30px;
+    flex-basis: 20%;
+
+}
+#msg1{
+   position:fixed;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   background-color: black;
+   color:white;
+   display: none;
+
+}
+#msg2{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    color:white;
+    display: none;
+ 
+ }
+.eins{
+   height:200px;
+   width:200px;
+   object-fit: contain;
+}
+.para{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left:15px;
+}
+.bn{
+   background-color: red;
+   border:none;
+   border-radius: 10px;
+   margin:10px;
+   padding:10px;
+}
+.de{
+    background-color: red;
+    border:none;
+    border-radius: 10px;
+    margin:10px;
+    padding:10px;
+ }
+#hide{
+    background-color: red;
+    height:fit-content;
+    margin-top:20px;
+    margin-right:18px;
+}
+.newpop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup{
+    background-color: black;
+    color:white;
+    width:38%;
+    padding:20px;
+    border-radius: 20px;
+    position:fixed;
+    top:25%;
+    display: none;
+}
+#popup input{
+    background: none;
+    color:white;
+    border: none;
+    border-bottom: 2px solid white;
+    padding:10px;
+    font-size: 15px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width:90%;
+
+}
+#popup textarea{
+    background: none;
+    color:white;
+    border: none;
+    border-bottom: 2px solid white;
+    padding:10px;
+    font-size: 15px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width:90%;
+}
+.us{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image{
+    width:30%;
+    height:15%;
+    object-fit:contain ;
+}
+.saving{
+    width:100%;
+    display: flex;
+    justify-content: right;
+    margin-top:15px;
+}
+#save{
+    background-color: green;
+    padding:10px;
+}
+.shutting{
+    width:100%;
+    display: flex;
+    justify-content: right;
+    margin-top:10px;
+}
+#shut{
+    background-color: red;
+    height:fit-content;
+    padding:10px;
+}
+#ok{
+    background-color: green;
+    padding:10px;
+    text-align: end;
+    margin:10px;
+}
+.nthg{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Kart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Matemasie&family=Odibee+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Matemasie&family=Odibee+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="kart">
+        <div class="same">
+        <h1>CART </h1>
+        <button id="hide" onclick="hide()">X</button>
+        </div>
+        
+        <div id="msg1">
+            <h1>ORDER PLACED THANK YOU</h1>
+            <div class="nthg">
+            <button id="ok" onclick="close1()">OK</button>
+            </div>
+        </div>
+        <div id="msg2">
+            <h1>REMOVED FROM THE CART</h1>
+            <div class="nthg">
+            <button id="ok" onclick="close2()">OK</button>
+            </div>
+        </div>
+    </div>
+    <div id="full">
+    <div class="header">
+           <h1 class="name">S-Kart</h1>
+           <div class="bas">
+                <i class="fa-solid fa-user" id="user"></i>
+                <i class="fa-solid fa-cart-shopping" id="carte"></i>
+            </div>
+    </div>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass" id="mfy"></i>
+        <input placeholder="Search!!!" id="find">
+    </div>
+    <div class="cont">
+        <div class="st">
+            <div class="im">
+            <img src="pencil.jpg" id="pencil">
+            </div>
+            <hr>
+            <p>Apsara Matt Magic Extra Dark Pencil | Pack Of 20</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>80</h4>
+            <button onclick="a1()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="b-pen.jpg" >
+            </div>
+            <hr>
+            <p>Hauser XO 0.7mm Ball Pen Box Pack |Matt Finish & Solid Body Type | Smooth, Sturdy & Refillable Pen | Blue Ink, Pack of 10 Pens</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>100</h4>
+            <button onclick="a2()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="g-pen.jpg" >
+            </div>
+            <hr>
+            <p>Hauser XO Jumbo Gel Pen Box Pack | Water Proof Ink For Smooth Flow System | Smooth, Sturdy & Refillable Pen | Blue Ink, Pack of 10 Pens</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>200</h4>
+            <button onclick="a3()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="ink-pen.jpg" >
+            </div>
+            <hr>
+            <p>Flair Inky Series Carbonix Liquid Blue Ink Fountain Pen Blister Pack | Round, Iridium Tip | Free 2 Pieces X-Large Jumbo Cartridges |Pack of 1</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>60</h4>
+            <button onclick="a4()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="rubber.jpg" >
+            </div>
+            <hr>
+            <p>Apsara Non Dust Erasers, Bigger for better grip - Pack of 20</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>60</h4>
+            <button onclick="a5()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="sharp.jpg">
+            </div>
+            <hr>
+            <p>Apsara Long Point Sharpeners, Comfortable Grip, Highly Durable, Anti-Rust, Scientifically Designed Blade, Child Safe, for Students, Pack 0f 10</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>30</h4>
+            <button onclick="a6()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="scale.jpg">
+            </div>
+            <hr>
+            <p>Nataraj 621 Transparent 30cm Scale, High Accuracy, Smooth and Rounded Edges, Bold Markings for Precise Results, Special Mm Markings for Students </p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>10</h4>
+            <button onclick="a7()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="pouch.jpg">
+            </div>
+            <hr>
+            <p>S-Kart 5 Pieces Transparent Pouch - Heavy-Duty Plastic Reinforced With Threads - Mesh Bag With Zipper</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>200</h4>
+            <button onclick="a8()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="box.jpg" height="200px">
+            </div>
+            <hr>
+            <p>Plastic Lock Compass Box Multifunctional Space Lock Compass Box For Kids, Kids Pencil Box, Magnetic & Password Lock Compass Box </p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>500</h4>
+            <button onclick="a9()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="gm-box.jpg">
+            </div>
+            <hr>
+            <p>Classmate Archimedes Geometry Box, Long-Lasting Die-Cast Accuracy Instruments, Compass, Set-Square, Protractor </p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>150</h4>
+            <button onclick="a10()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="notebook.jpg">
+            </div>
+            <hr>
+            <p>Classmate Notebook - Single Line, 120 Pages, 240 mm x 180 mm - Pack Of 4</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>160</h4>
+            <button onclick="a11()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="files.jpg">
+            </div>
+            <hr>
+            <p>S-Kart basics 6 Pcs A4 Paper Document File Bag,Transparent Envelope Holder Storage Case,Clear Plastic Bag</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>240</h4>
+            <button onclick="a12()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="sketch.jpg">
+            </div>
+            <hr>
+            <p>Faber-Castell Connector Pen Set - Pack of 15 (Assorted)</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>70</h4>
+            <button onclick="a13()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="color pencil.jpg">
+            </div>
+            <hr>
+            <p>DOMS 24 Shades Color Pencils|Bright & Playful Colors</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>120</h4>
+            <button onclick="a14()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="crayons.jpg">
+            </div>
+            <hr>
+            <p>Faber-Castell Jumbo Wax Crayons-24 Shades|Multicolor</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>110</h4>
+            <button onclick="a15()">Add to cart</button>
+            </div>
+        </div>
+        <div class="st">
+            <div class="im">
+            <img src="paints.jpg">
+            </div>
+            <hr>
+            <p>Doms 12 Shades Poster Colours|Rich & Vibrant Colors</p>
+            <div class="cart">
+            <h4><i class="fa-solid fa-indian-rupee-sign"></i>180</h4>
+            <button onclick="a16()">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="one">
+            <h3>GET TO KNOW ABOUT US</h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Release</p>
+        </div>
+        <div class="two">
+            <h3>CONTACT US</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
+        <div class="three">
+           <h3>OUR OTHER WEBSITES</h3>
+           <p>Ed-Tube</p>
+           <p>Parkit</p>
+           <p>My Grocery</p>
+        </div>
+    </div>
+    </div>
+    <div class="newpop">
+    <div id="popup">
+        <div class="shutting">
+        <button id="shut" onclick="shut()">X</button>
+        </div>
+        <div class="us">
+        <img class="image" src="user.png">
+        </div>
+        <input placeholder="NAME">
+        <textarea placeholder="ENTER YOUR ADDRESS"></textarea>
+        <input type="number" placeholder="NUMBER">
+        <div class="saving">
+        <button id="save">Save</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
