@@ -6,3 +6,5 @@ Features:
      2️⃣Shopping cart functionality
      3️⃣Search functionality
      4️⃣User account
+     5️⃣Responsive 
+     
